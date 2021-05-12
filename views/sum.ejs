@@ -1,0 +1,32 @@
+<%- include("_header") -%>
+
+<h1> Calculate Sum of Series </h1>
+<br>
+<!-- form structure from search screen (default POST) -->
+<!-- Not using bootstrap, just a simple form that you may enhance -->
+<form action="/sum" method="POST">
+    <table>
+        <tr>
+            <td><label for="start_num">Enter Starting Number</label>:</td>
+            <td><input type="number" name="start_num" id="start_num" /></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label for="end_num">Enter Ending Number</label>:</td>
+            <td><input type="number" name="end_num" id="end_num" /></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label for="num_inc">Enter Increment</label>:</td>
+            <td><input type="number" name="num_inc" id="num_inc" /></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td span="2">
+                <input type="submit" class="btn btn-primary" value="Calculate Sum" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<%- include("_footer") -%>
